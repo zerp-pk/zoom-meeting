@@ -1,6 +1,6 @@
 {
     "name": "zerp/zoom-meeting",
-    "description": "Description for zoom-meeting package",
+    "description": "Zoom meeting integration module for the Zerp ERP platform",
     "type": "library",
     "license": "MIT",
     "require": {},

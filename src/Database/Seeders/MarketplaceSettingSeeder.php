@@ -18,7 +18,7 @@ class MarketplaceSettingSeeder extends Seeder
             $files = File::files($marketplaceDir);
             foreach ($files as $file) {
                 if (in_array($file->getExtension(), ['png', 'jpg', 'jpeg', 'gif', 'webp'])) {
-                    $screenshots[] = '/packages/workdo/ZoomMeeting/src/marketplace/' . $file->getFilename();
+                    $screenshots[] = '/packages/local/ZoomMeeting/src/marketplace/' . $file->getFilename();
                 }
             }
         }
@@ -33,7 +33,7 @@ class MarketplaceSettingSeeder extends Seeder
                 'sections' => [
                     'hero' => [
                         'variant' => 'hero1',
-                        'title' => 'Zoom Meeting Module for ERPGo SaaS',
+                        'title' => 'Zoom Meeting Module for Zerp',
                         'subtitle' => 'Create and manage professional video conferences with Zoom API integration, participant management, and advanced meeting controls.',
                         'primary_button_text' => 'Install Zoom Meeting Module',
                         'primary_button_link' => '#install',
@@ -55,19 +55,19 @@ class MarketplaceSettingSeeder extends Seeder
                                 'title' => 'Meeting Creation & Management',
                                 'description' => 'Comprehensive meeting creation with title, description, scheduling, duration settings, and participant management. Features include automatic meeting ID generation, password protection, host and participant video controls, and waiting room functionality for enhanced security.',
                                 'keyPoints' => ['Meeting Scheduling', 'Participant Management', 'Security Controls', 'Duration Settings'],
-                                'screenshot' => '/packages/workdo/ZoomMeeting/src/marketplace/image1.png'
+                                'screenshot' => '/packages/local/ZoomMeeting/src/marketplace/image1.png'
                             ],
                             [
                                 'title' => 'Advanced Meeting Controls',
                                 'description' => 'Professional meeting controls including host video settings, participant video management, waiting room activation, and recording capabilities. Features customizable meeting options, status tracking, and comprehensive meeting configuration for optimal user experience.',
                                 'keyPoints' => ['Video Controls', 'Waiting Room', 'Recording Options', 'Status Tracking'],
-                                'screenshot' => '/packages/workdo/ZoomMeeting/src/marketplace/image2.png'
+                                'screenshot' => '/packages/local/ZoomMeeting/src/marketplace/image2.png'
                             ],
                             [
                                 'title' => 'Zoom API Integration & Settings',
                                 'description' => 'Seamless integration with Zoom API for automated meeting creation, join URL generation, and meeting management. Features include API key configuration, webhook support, and comprehensive settings management for enterprise-grade video conferencing.',
                                 'keyPoints' => ['Zoom API Integration', 'Automated URL Generation', 'Webhook Support', 'Enterprise Configuration'],
-                                'screenshot' => '/packages/workdo/ZoomMeeting/src/marketplace/image3.png'
+                                'screenshot' => '/packages/local/ZoomMeeting/src/marketplace/image3.png'
                             ]
                         ]
                     ],
