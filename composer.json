@@ -1,0 +1,29 @@
+{
+    "name": "zerp/zoom-meeting",
+    "description": "Description for zoom-meeting package",
+    "type": "library",
+    "license": "MIT",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Zerp\\ZoomMeeting\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "ZAWAT OFFICIALS PVT LTD",
+            "email": "zawatofficials@gmail.com"
+        },
+        {
+            "name": "HafizMMoaz",
+            "email": "hafizmoazkhalid@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Zerp\\ZoomMeeting\\Providers\\ZoomMeetingServiceProvider"
+            ]
+        }
+    }
+}
